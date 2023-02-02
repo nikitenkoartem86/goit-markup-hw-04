@@ -205,10 +205,10 @@ border-bottom: 1px solid #E7E9FC;
 /* < !--Section--> */
 .hero{
     
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../img/people-office\ 1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../img/people-office.jpg);
     background-repeat: no-repeat;
     background-position:50% 50%;
-    
+    background-size: cover;
     background-color:var(--dark);
     padding: 188px 0;
     text-align: center;
@@ -267,8 +267,9 @@ border-bottom: 1px solid #E7E9FC;
     
     gap: 24px;
 }
-.features-icon{
-    padding: 24px 100px;
+.features-svg{ 
+        display: flex;
+        margin-bottom: 8px;
         align-items: center;
         justify-content: center;
         width:264px;
@@ -276,7 +277,10 @@ border-bottom: 1px solid #E7E9FC;
         background-color:var(--light);
         border-radius: 4px;
 
+
+
 }
+
         
 
         
@@ -403,17 +407,24 @@ border-bottom: 1px solid #E7E9FC;
                     height: 88px;
                     border-radius: 4px;
                     
-                    border: 1px solid var(--subtle-text);
+                    border: 1px solid currentColor;
+                    color: var(--subtle-text);
                 }
-                .customers-icon{
-                     fill:var(--subtle-text);
-                }
-                .customers-link:hover .customers-icon{
-                    fill:var(--button-aktive);
+                
+                .customers-link:hover,
+                .customers-link:focus{
+                    color:var(--button-aktive);
                     }
+                    .customers-icon{
+                     fill :currentColor;
+                }
+                
 
                  .footer-container{
                     display: flex;
+                 }
+                 .footer-socials{
+                    margin-left: 120px;
                  }
                  .socials-dark{
                     display: flex;
@@ -450,7 +461,7 @@ border-bottom: 1px solid #E7E9FC;
                  .footer-text {
                     width: 264px;
                     margin-top: 16px;
-                    margin-right: 120px;
+                    /* margin-right: 120px; */
                   
                     font-size: 16px;
                     line-height: 1.5;
@@ -478,7 +489,8 @@ border-bottom: 1px solid #E7E9FC;
                 }
                 .button-portfolio{
                     background:var(--light);
-                    
+                    /* width: 116px;
+                    height: 48px; */
                     border: 1px solid #E7E9FC;
                     border-radius: 4px;
                     font-weight: 500;
@@ -489,7 +501,7 @@ border-bottom: 1px solid #E7E9FC;
                             
                             align-items: center;
                             text-align: center;
-                            letter-spacing: 0.04em;
+                             letter-spacing: 0.04em;
                         
                             color:var(--primary-brand);
                 }
@@ -498,6 +510,7 @@ border-bottom: 1px solid #E7E9FC;
                 .button-portfolio:focus {
                      background-color:var(--button-aktive);
                      color:var(--white-text-color);
+                    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
                 }
                 
                  .works-wrapper {
@@ -514,17 +527,19 @@ border-bottom: 1px solid #E7E9FC;
                     gap:48px 24px;
                 }
 
-                .works-wrapper:hover,
-                .works-wrapper:focus{
-                    border:0.5px solid #F4F4FD;
+                .works-link:hover,
+                .works-link:focus{
+                    /* border:0.5px solid var(--light); */
                     border-top: none;
-                    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+                     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);  
                     
                    
 
                 }
 
-                
+                .works-link{
+                    display: block;
+                }
                 
                 
                 
